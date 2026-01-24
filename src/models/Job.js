@@ -12,7 +12,7 @@ const jobSchema = new mongoose.Schema({
      },
      description :String,
         location:String,
-        skillss:[String],
+        skills:[String],
         salary:{
             type:Number,}
 } ,
