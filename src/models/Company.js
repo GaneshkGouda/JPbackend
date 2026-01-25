@@ -4,7 +4,7 @@ const companySchema = new mongoose.Schema({
     name:{
         type:String,
         required:true,} ,
-        recuiter:{
+        recruiter:{
             type : mongoose.Schema.Types.ObjectId ,
             ref :"User",
             required:true
