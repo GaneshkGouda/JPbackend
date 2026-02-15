@@ -13,12 +13,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@bull-board/api": "^6.18.2",
+    "@bull-board/express": "^6.18.2",
     "bcryptjs": "^3.0.3",
+    "bullmq": "^5.67.1",
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.5",
+    "nodemailer": "^8.0.1",
     "redis": "^5.10.0"
   },
   "devDependencies": {
