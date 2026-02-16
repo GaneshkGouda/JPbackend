@@ -53,7 +53,13 @@ exports.getMyApplication = async (req, res) => {
   try {
     const applications = await Application.find({
       candidate: req.user.userId,
-    }).populate("job");
+    }).populate({
+        path: "job",
+        populate: {
+          path: "company",
+          select: "name",  }
+      })
+      .lean();;
 
     res.status(200).json({ applications });
   } catch (error) {
