@@ -18,6 +18,6 @@ app.use("/abmin/queues", bullBoard.getRouter());
 
 
 app.get("/health",(req,res)=>{
-    res.send(200).json({status : "OK" , message :"server is running" })
+    res.status(200).json({status : "OK" , message :"server is running" })
 })
  module.exports = app ;
